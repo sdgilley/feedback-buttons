@@ -45,7 +45,7 @@ export async function activate(context: vscode.ExtensionContext) {
 			"<a name='" + text + "'></a>\n\n" + 
 			"<! --- Put the next 2 lines to the end of your section.  Change the values for <next-section-id> and <surveyurl> --->\n" +
 			"> [!div class='nextstepaction']\n" + 
-			">[I created the control script](?success=" + text + "#<next-section-id>) [I ran into an issue](<surveyurl>?issue=" + text + ")"
+			">[I created the control script](?success=" + text + "#<next-section-id>) [I ran into an issue](<surveyurl>?issue=" + text + ")";
 
 			if (editor) {
 				editor.edit(editBuilder => {

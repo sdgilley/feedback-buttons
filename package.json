@@ -3,6 +3,8 @@
 	"displayName": "feedback-buttons",
 	"description": "Add Feedback Buttons",
 	"version": "0.0.1",
+	"publisher": "Sheri Gilley",
+	"icon": "resources/images/icon.png",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
@@ -20,6 +22,10 @@
 				"title": "Add Feedback Buttons"
 			}
 		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sdgilley/feedback-buttons.git"
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
