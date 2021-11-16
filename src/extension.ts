@@ -26,7 +26,7 @@ export async function activate(context: vscode.ExtensionContext) {
 			return;
 		} else {
 			const value = await vscode.window.showInputBox({
-				prompt: 'Name the section',
+				prompt: 'Provide a bookmark-id',
 			});
 
 			if (!value) {
@@ -41,9 +41,9 @@ export async function activate(context: vscode.ExtensionContext) {
 
 		function enterText(text: string) {
 			const editor = vscode.window.activeTextEditor;
-			const markup = "<! --- Put the next line at the top (above the h2) for your current section --->\n" +  
+			const markup = "<! --- Put the next line above the h2 for your section --->\n" +  
 			"<a name='" + text + "'></a>\n\n" + 
-			"<! --- Put the next 2 lines to the end of your current section.  Change the value of the <next-section-id> and <surveyurl> --->\n" +
+			"<! --- Put the next 2 lines to the end of your section.  Change the values for <next-section-id> and <surveyurl> --->\n" +
 			"> [!div class='nextstepaction']\n" + 
 			">[I created the control script](?success=" + text + "#<next-section-id>) [I ran into an issue](<surveyurl>?issue=" + text + ")"
 
