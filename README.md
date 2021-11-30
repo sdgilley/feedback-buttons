@@ -1,9 +1,26 @@
 # feedback-buttons README
 
-This is the README for "feedback-buttons". Use this extension to add the buttons into your markdown file.
+This is the README for "feedback-buttons". Use this extension to add the buttons into your markdown file.  
+
+
 ## Features
 
-Specify the bookmark id to use for the section.  You'll get the bookmark to put at the top of the section, and the buttons to add at the bottom.  
+After you install, **Ctrl-Shift-P > Add Feedback Buttons**.  Then type in the name you want to use for the bookmark of your current section.  
+
+You'll get the code to add to the top and bottom of the section.  Finish up by adding the url to your survey (<surveyurl>), and the bookmark for the next section (<next-section-id>).  
+  
+ For example, if you input "current" as the bookmark for your section, your code will look like this.
+
+```
+<! --- Put the next line above the h2 for your section --->
+<a name='current'></a>
+
+<! --- Put the next 2 lines to the end of your section.  Change the values for <next-section-id> and <surveyurl> --->
+> [!div class='nextstepaction']
+>[I created the control script](?success=current#<next-section-id>) [I ran into an issue](<surveyurl>?issue=current)
+
+```
+
 
 ## Requirements
 
